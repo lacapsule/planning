@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/javascript" href="luxon.js">
+    <script src="luxon.js">
+    function myFunction() {
+        import DateTime from 'luxon.js'
+        const date = DateTime.now().weekNumber
+  document.getElementById("date").innerHTML = '${date}';
+}
+
+    
+        </script>
+    <title>PLANNING</title>
+</head>
+<body>
+
+    <header>PLANNING DE LA SEMAINE <i id="date"></i></header>
+
+    <main>
+        <span><p>Lundi</p></span><span><p>matin</p><p>après-midi</p></span>
+        <span>
+            <p><input type="text" name="lundi_matin" placeholder="Projet Professionnel"/></p>
+            <p><input type="text" name="lundi_apres_midi" placeholder="Prépa médiation"/></p>
+        </span>
+        <span><p>Mardi</p></span><span><p>matin</p><p>après-midi</p></span>
+        <span>
+            <p><input type="text" name="mardi_matin" placeholder="Médiation"/></p>
+            <p><input type="text" name="mardi_apres_midi" placeholder="Reconditionnement"/></p>
+        </span>
+        <span><p>Mercredi</p></span><span><p>matin</p><p>après-midi</p></span>
+        <span>
+            <p><input type="text" name="mercredi_matin" placeholder=""/></p>
+            <p><input type="text" name="mercredi_apres_midi" placeholder=""/></p>
+        </span>
+        <span><p>Jeudi</p></span><span><p>matin</p><p>après-midi</p></span>
+        <span>
+            <p><input type="text" name="jeudi_matin" placeholder="Production"/></p>
+            <p><input type="text" name="jeudi_apres_midi" placeholder="Projet Professionnel"/></p>
+        </span>
+        <span><p>Vendredi</p></span><span><p>matin</p><p>après-midi</p></span>
+        <span>
+            <p><input type="text" name="vendredi_matin" placeholder="Développement"/></p>
+            <p><input type="text" name="vendredi_apres_midi" placeholder="REPAIR CAFÉ"/></p>
+        </span>
+    </main>
+
+    <footer>Développé par Adrien Ferron</footer>
+    <script src="luxon.js"></script>
+</body>
+</html>
